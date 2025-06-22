@@ -39,9 +39,31 @@ These are the basic steps for working with the starter. For detailed guidance on
 10. Update the LICENSE file to use your details.
 11. [Publish](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) your package to npm.
 
-## More information
+# Zen Engine Node para n8n
 
-Refer to our [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
+Este nó permite executar regras no formato JSON Decision Model (JDM) utilizando a Zen Engine (GoRules) diretamente em workflows do n8n.
+
+## Funcionalidades
+- Recebe regras (JDM) em JSON
+- Recebe dados de entrada em JSON
+- Executa as regras usando a Zen Engine
+- Retorna o resultado da execução
+
+## Parâmetros
+- **Rules**: Definição das regras no formato JDM (JSON)
+- **Input Data**: Dados de entrada para avaliação das regras (JSON)
+
+## Exemplo de uso
+1. Adicione o nó "Zen Engine" ao seu workflow
+2. Informe as regras e o input desejado
+3. O resultado será retornado como saída do nó
+
+## Sobre o Zen Engine
+Mais informações: [https://gorules.io](https://gorules.io)
+
+---
+
+> Desenvolvido para integração nativa de regras de negócio no n8n.
 
 ## License
 
