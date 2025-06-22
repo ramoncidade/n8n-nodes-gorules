@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-zen-engine",
   "version": "0.1.0",
   "description": "",
   "keywords": [
@@ -9,7 +9,7 @@
   "homepage": "",
   "author": {
     "name": "",
-    "email": ""
+    "email": "dev@gorules.io"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
       "dist/credentials/HttpBinApi.credentials.js"
     ],
     "nodes": [
+      "dist/nodes/ZenEngine/ZenEngine.node.js",
       "dist/nodes/ExampleNode/ExampleNode.node.js",
       "dist/nodes/HttpBin/HttpBin.node.js"
     ]
@@ -51,5 +52,8 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "@gorules/zen-engine": "^0.46.0"
   }
 }
