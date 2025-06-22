@@ -5,9 +5,9 @@ import type {
 	INodeTypeDescription,
 } from 'n8n-workflow';
 import { NodeConnectionType, NodeOperationError } from 'n8n-workflow';
-import { ZenEngine } from '@gorules/zen-engine';
+import { ZenEngine as ZenEngineLib } from '@gorules/zen-engine';
 
-export class ZenEngineNode implements INodeType {
+export class ZenEngine implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Zen Engine',
 		name: 'zenEngine',
@@ -58,7 +58,7 @@ export class ZenEngineNode implements INodeType {
 					input = JSON.parse(inputParam);
 				}
 
-				const engine = new ZenEngine();
+				const engine = new ZenEngineLib();
 				const decision = engine.createDecision(rules);
 				const result = await decision.evaluate(input);
 				engine.dispose();

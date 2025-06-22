@@ -1,15 +1,15 @@
 {
   "name": "n8n-nodes-zen-engine",
   "version": "0.1.0",
-  "description": "",
+  "description": "A custom n8n node package for Zen Engine integration",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": "dev@gorules.io"
+    "name": "Ramon Cidade",
+    "email": "ramon.cidade@email.com"
   },
   "repository": {
     "type": "git",
